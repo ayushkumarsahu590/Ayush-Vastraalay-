@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f7f3ed;
+  color: #211b16;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 7%;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #e5d8c8;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 17px;
+}
+
+.brand-icon {
+  font-size: 25px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-links a {
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  transform: translateY(-2px);
+}
+
+/* HERO */
+.hero {
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 20px;
+  background:
+    radial-gradient(circle at top, #fffdf9 0%, #eee2d2 45%, #d8c1a5 100%);
+}
+
+.hero-content {
+  max-width: 780px;
+}
+
+.eyebrow,
+.section-label {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.hero h1 {
+  margin: 18px 0;
+  font-size: clamp(52px, 10vw, 105px);
+  line-height: 0.95;
+  letter-spacing: -3px;
+}
+
+.hero h1 span {
+  font-style: italic;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 19px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button,
+.map-button,
+.whatsapp-button {
+  display: inline-block;
+  padding: 13px 23px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.primary-button {
+  background: #211b16;
+  color: white;
+}
+
+.secondary-button {
+  background: white;
+  border: 1px solid #211b16;
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.map-button:hover,
+.whatsapp-button:hover {
+  transform: translateY(-3px);
+}
+
+/* GENERAL SECTIONS */
+.welcome,
+.categories,
+.collection-section,
+.info-section,
+.about-section,
+.contact-section {
+  padding: 85px 7%;
+  text-align: center;
+}
+
+.welcome {
+  background: white;
+}
+
+h2 {
+  font-size: clamp(32px, 5vw, 52px);
+  margin: 10px 0 18px;
+}
+
+.welcome > p:last-child,
+.section-description {
+  max-width: 650px;
+  margin: auto;
+  color: #665b50;
+}
+
+/* CATEGORIES */
+.categories {
+  background: #f7f3ed;
+}
+
+.category-grid,
+.collection-grid {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.category-card,
+.collection-card {
+  padding: 38px 24px;
+  min-height: 230px;
+  border-radius: 24px;
+  background: white;
+  border: 1px solid #e5d8c8;
+  box-shadow: 0 12px 35px rgba(50,35,20,0.08);
+  transition: 0.25s;
+}
+
+.category-card:hover,
+.collection-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 45px rgba(50,35,20,0.14);
+}
+
+.category-symbol,
+.collection-icon {
+  font-size: 58px;
+  margin-bottom: 15px;
+}
+
+.category-card h3,
+.collection-card h3 {
+  font-size: 23px;
+  margin-bottom: 7px;
+}
+
+.category-card p,
+.collection-card p {
+  color: #75695e;
+  margin-bottom: 15px;
+}
+
+.category-card span,
+.collection-card span {
+  font-weight: bold;
+}
+
+/* COLLECTION */
+.collection-section {
+  background: #211b16;
+  color: white;
+}
+
+.collection-section .section-label,
+.collection-section .section-description {
+  color: #ddd0c2;
+}
+
+.collection-card {
+  background: #fffdf9;
+  color: #211b16;
+  border: none;
+}
+
+/* INFO SECTIONS */
+.info-section {
+  background: white;
+  border-bottom: 1px solid #e5d8c8;
+}
+
+.info-section:nth-of-type(even) {
+  background: #f1e7da;
+}
+
+.info-icon {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.info-section p:last-child {
+  max-width: 650px;
+  margin: auto;
+  color: #665b50;
+}
+
+/* ABOUT */
+.about-section {
+  background: #eadcc9;
+}
+
+.about-section > p:not(.section
