@@ -449,7 +449,22 @@ footer p {
   .nav-links a {
     white-space: nowrap;
   }
+.call-button {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 3px;
+  background: #17130f;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .6px;
+  transition: .3s;
+}
 
+.call-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+}
   .hero {
     min-height: 78vh;
     padding: 70px 18px;
